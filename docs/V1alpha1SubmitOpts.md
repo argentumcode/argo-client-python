@@ -4,6 +4,7 @@ SubmitOpts are workflow submission options
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**annotations** | **str** | Annotations adds to metadata.labels | [optional] 
 **dry_run** | **bool** | DryRun validates the workflow on the client-side without creating it. This option is not supported in API | [optional] 
 **entry_point** | **str** | Entrypoint overrides spec.entrypoint | [optional] 
 **generate_name** | **str** | GenerateName overrides metadata.generateName | [optional] 

@@ -4,6 +4,7 @@ WorkflowStatus contains overall status information about a workflow
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**artifact_repository_ref** | [**V1alpha1ArtifactRepositoryRefStatus**](V1alpha1ArtifactRepositoryRefStatus.md) |  | [optional] 
 **compressed_nodes** | **str** | Compressed and base64 decoded Nodes map | [optional] 
 **conditions** | [**list[V1alpha1Condition]**](V1alpha1Condition.md) | Conditions is a list of conditions the Workflow may have | [optional] 
 **estimated_duration** | **int** | EstimatedDuration in seconds. | [optional] 

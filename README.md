@@ -2,7 +2,7 @@
 
 Python client for Argo Workflows
 
-Argo Version: 2.12.2
+Argo Version: 3.0.4
 
 ## Installation
 

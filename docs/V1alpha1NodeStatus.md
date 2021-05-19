@@ -23,13 +23,11 @@ Name | Type | Description | Notes
 **progress** | **str** | Progress to completion | [optional] 
 **resources_duration** | **dict(str, int)** | ResourcesDuration is indicative, but not accurate, resource duration. This is populated when the nodes completes. | [optional] 
 **started_at** | **datetime** | Time at which this node started | [optional] 
-**stored_template_id** | **str** | StoredTemplateID is the ID of stored template. DEPRECATED: This value is not used anymore. | [optional] 
 **synchronization_status** | [**V1alpha1NodeSynchronizationStatus**](V1alpha1NodeSynchronizationStatus.md) |  | [optional] 
 **template_name** | **str** | TemplateName is the template name which this node corresponds to. Not applicable to virtual nodes (e.g. Retry, StepGroup) | [optional] 
 **template_ref** | [**V1alpha1TemplateRef**](V1alpha1TemplateRef.md) |  | [optional] 
 **template_scope** | **str** | TemplateScope is the template scope in which the template of this node was retrieved. | [optional] 
 **type** | **str** | Type indicates type of node | 
-**workflow_template_name** | **str** | WorkflowTemplateName is the WorkflowTemplate resource name on which the resolved template of this node is retrieved. DEPRECATED: This value is not used anymore. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

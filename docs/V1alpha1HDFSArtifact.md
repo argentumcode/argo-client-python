@@ -4,7 +4,7 @@ HDFSArtifact is the location of an HDFS artifact
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**addresses** | **list[str]** | Addresses is accessible addresses of HDFS name nodes | 
+**addresses** | **list[str]** | Addresses is accessible addresses of HDFS name nodes | [optional] 
 **force** | **bool** | Force copies a file forcibly even if it exists (default: false) | [optional] 
 **hdfs_user** | **str** | HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used. | [optional] 
 **krb_c_cache_secret** | [**V1SecretKeySelector**](V1SecretKeySelector.md) |  | [optional] 

@@ -4,7 +4,7 @@ GCSArtifact is the location of a GCS artifact
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**bucket** | **str** | Bucket is the name of the bucket | 
+**bucket** | **str** | Bucket is the name of the bucket | [optional] 
 **key** | **str** | Key is the path in the bucket where the artifact resides | 
 **service_account_key_secret** | [**V1SecretKeySelector**](V1SecretKeySelector.md) |  | [optional] 
 

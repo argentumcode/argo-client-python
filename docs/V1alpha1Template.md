@@ -4,9 +4,9 @@ Template is a reusable and composable unit of execution in a workflow
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**active_deadline_seconds** | **str** | Optional duration in seconds relative to the StartTime that the pod may be active on a node before the system actively tries to terminate the pod; value must be positive integer This field is only applicable to container and script templates. | [optional] 
 **affinity** | [**V1Affinity**](V1Affinity.md) |  | [optional] 
 **archive_location** | [**V1alpha1ArtifactLocation**](V1alpha1ArtifactLocation.md) |  | [optional] 
-**arguments** | [**V1alpha1Arguments**](V1alpha1Arguments.md) |  | [optional] 
 **automount_service_account_token** | **bool** | AutomountServiceAccountToken indicates whether a service account token should be automatically mounted in pods. ServiceAccountName of ExecutorConfig must be specified if this value is false. | [optional] 
 **container** | [**V1Container**](V1Container.md) |  | [optional] 
 **daemon** | **bool** | Deamon will allow a workflow to proceed to the next step so long as the container reaches readiness | [optional] 
@@ -35,8 +35,6 @@ Name | Type | Description | Notes
 **steps** | **list[list[V1alpha1WorkflowStep]]** | Steps define a series of sequential/parallel workflow steps | [optional] 
 **suspend** | [**V1alpha1SuspendTemplate**](V1alpha1SuspendTemplate.md) |  | [optional] 
 **synchronization** | [**V1alpha1Synchronization**](V1alpha1Synchronization.md) |  | [optional] 
-**template** | **str** | Template is the name of the template which is used as the base of this template. DEPRECATED: This field is not used. | [optional] 
-**template_ref** | [**V1alpha1TemplateRef**](V1alpha1TemplateRef.md) |  | [optional] 
 **timeout** | **str** | Timout allows to set the total node execution timeout duration counting from the node&#39;s start time. This duration also includes time in which the node spends in Pending state. This duration may not be applied to Step or DAG templates. | [optional] 
 **tolerations** | [**list[V1Toleration]**](V1Toleration.md) | Tolerations to apply to workflow pods. | [optional] 
 **volumes** | [**list[V1Volume]**](V1Volume.md) | Volumes is a list of volumes that can be mounted by containers in a template. | [optional] 
